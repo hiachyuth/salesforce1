@@ -1,0 +1,13 @@
+<apex:page controller="CustomCreateNewAccount" tabstyle="Account">
+	<apex:form>
+		<apex:pageblock title="Congratulations{!User.FirstName}  ">
+			<apex:pageblockSection>
+				<apex:inputField   value="{!account.name}" />
+				<apex:inputField   value="{!account.phone}" />
+				<apex:inputField   value="{!account.industry}" />
+				<apex:commandButton action="{!save}" value="save"/>
+			</apex:pageblocSection>			
+			
+		</apex:pageblock>
+	</apex:form>
+</apex:page>
